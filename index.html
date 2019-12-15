@@ -11,35 +11,30 @@
     <div id="title">POKEMON FIGHT!</div>
     <div id="battlefield">
       <div id="playerOne">
-        <div id=playerOneName class="playerName">Charmeleon</div>
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png" alt="">
-        <div id="statsBoxPlayerOne">
-          <ul id="statsListPlayerOne">
-            <li>Speed</li>
-            <li>Special Defense</li>
-            <li>Special Attack</li>
-            <li>Defense</li>
-            <li>Attack</li>
-            <li>HP</li>
-          </ul>
-        </div>
+        <select name="pokemon" id="player-1-btn">
+          <option value="select">select pokemon</option>
+          <option value="pikachu">Pikachu</option>
+          <option value="charmeleon">Charmeleon</option>
+          <option value="jigglypuff">Jiggly Puff</option>
+        </select>
+        <input id="submit-1" type="submit">
       </div>
       <div id="versus">VS</div>
+      <div id="fight">
+        <button id="fight">FIGHT</button>
+      </div>
       <div id="playerTwo">
-        <div id="playerTwoName" class="playerName">Jigglypuff</div>
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" alt="">
-        <div id="statsBoxPlayerTwo">
-            <ul id="statsListPlayerTwo">
-                <li>Speed</li>
-                <li>Special Defense</li>
-                <li>Special Attack</li>
-                <li>Defense</li>
-                <li>Attack</li>
-                <li>HP</li>
-              </ul>
-        </div>
+        <select name="pokemon" id="player-2-btn">
+            <option value="select">select pokemon</option>
+            <option value="pikachu">Pikachu</option>
+            <option value="charmeleon">Charmeleon</option>
+            <option value="jigglypuff">Jiggly Puff</option>
+          </select>
+          <input id="submit-2" type="submit">
       </div>
     </div>
   </div>
+  <div id=winner-div></div>
+  <script src="main.js"></script>
 </body>
 </html>
